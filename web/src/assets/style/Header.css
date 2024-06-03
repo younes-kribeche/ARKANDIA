@@ -1,0 +1,42 @@
+/*--------------- STYLE GLOBAL ---------------*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+/*--------------- STYLE HEADER ---------------*/
+.nav-wrapper,
+nav {
+  margin-top: 0.5%;
+  background-color: #383737;
+  border-radius: 10px !important;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+}
+
+header,
+main {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.brand-logo{
+  margin-left: 1%;
+}
+
+.div_onglets{
+  margin-left: 2%;
+}
+
+#dropdown1{
+  width: 15% !important; 
+}

@@ -1,0 +1,12 @@
+.sidebar {
+  position: fixed;
+  width: 20%;
+  box-sizing: border-box;
+  border-right: 1px solid #a2a9b1;
+  height: 100vh;
+}
+
+.sidebar .toc {
+  margin-bottom: 20px;
+  text-align: center;
+}

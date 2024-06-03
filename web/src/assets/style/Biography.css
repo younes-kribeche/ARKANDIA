@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  width: 76% !important;
+  margin: 5%;
+  margin-top: 0 !important;
+  margin-right: 2%;
+  padding: 3%;
+  box-sizing: border-box;
+  margin-left: 22svw;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  margin-top: 2vh !important;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+ul, ol {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

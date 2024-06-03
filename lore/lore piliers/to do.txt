@@ -1,0 +1,10 @@
+à faire:
+-arranger hauteur cadneas comparé à l'image de la pioche, ex: si div prix pioche ne possède pas de contenu alors position du cadenas moins haute 
+
+-faire en sorte que les cadenas ne s'affichent que lorsque l'achat de la précédente pioche à été effectué + affiche le cadenas de la pioche suivante lorsque l'achat à été effectué
+
+-faire en sorte que la fonction change la souris par l'image de la pioche à l'achat de celle-ci
+
+
+
+

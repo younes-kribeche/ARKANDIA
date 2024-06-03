@@ -1,0 +1,17 @@
+/*--------------- STYLE CAROUSEL ---------------*/
+.carousel {
+  display: flex;
+  align-items: center;
+  height: 65vh;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel .carousel-item>img {
+  width: 150%;
+}
+

@@ -1,0 +1,19 @@
+.infobox {
+  display: flex;
+  width: 50svw;
+  margin: 5%;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 0.9em;
+  height: fit-content;
+  margin-left: 22svw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+}
+
+.infobox img {
+  max-width: 22svw;
+  height: auto;
+  margin-right: 10svh;
+  border:solid 5px #555 ;
+}

@@ -1,0 +1,202 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Assure que le body prend toute la hauteur de la fenêtre */
+}
+
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#bg-layer-1 {
+  z-index: -2;
+}
+
+#bg-layer-2 {
+  z-index: -1;
+  opacity: 0;
+}
+
+/* Pour s'assurer que le contenu ne dépasse pas */
+.container {
+  height: 90vh; /* Hauteur de la fenêtre */
+  overflow: hidden; /* Évite le défilement */
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+main.transitioning::before {
+  opacity: 1;
+  background-image: var(--new-background);
+}
+
+/*--------------- STYLE CAROUSEL ---------------*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.section-carousel {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row; /* Changé de column à row */
+  align-items: center;
+  justify-content: center;
+  height: 550px !important;
+  width: 100%;
+  position: relative; /* Ajouté pour le positionnement des éléments enfants */
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  overflow: visible !important;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px; /* Réduit l'espace entre les éléments */
+  transition: transform 1s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: absolute; /* Positionnement absolu pour l'effet de carrousel */
+  width: 280px !important;
+  opacity: 0; /* Ajuster l'opacité des éléments non actifs ici (à modifier selon ton besoin) */
+  text-align: center;
+  filter: brightness(90%); /* Réduire l'effet gris */
+}
+
+.carousel-item.active {
+  transform: scale(1) translateX(0); /* L'élément actif est centré et à taille normale */
+  z-index: 2; /* L'élément actif est au-dessus des autres */
+}
+
+.carousel-item:not(.active) {
+  transform: scale(0.9) translateX(-40%); /* Réduit le décalage pour rapprocher les éléments */
+  opacity: 0.8 !important;
+  filter: grayscale(50%);
+}
+
+.carousel-item img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s ease;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border: 5px solid transparent; /* Bordure transparente par défaut */
+  background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0)); /* Rouge opaque à transparent */
+  background-clip: padding-box; /* Pour ne pas afficher le dégradé à l'extérieur de la bordure */
+}
+  
+
+.carousel-item:not(.active) img {
+  transform: scale(0.9); /* Les éléments non actifs sont légèrement plus petits */
+}
+
+/* Camouflage des noms au-dessus des images non actives */
+.carousel-item p {
+  opacity: 0; /* Début transparent */
+  transition: opacity 0.5s ease; /* Transition douce pour l'opacité */
+  height: 2rem; /* Fixe une hauteur pour éviter le mouvement */
+  font-size: 1.2rem;
+}
+
+/* Noms visibles pour les éléments actifs */
+.carousel-item.active p {
+  opacity: 1; /* Rendre visible pour l'élément actif */
+}
+
+.carousel .indicators {
+  background-color: #303030a1;
+  width: 5rem;
+  height: 5vh;
+  bottom: 2rem !important;
+  left: 47% !important;
+  border-radius: 20px;
+  z-index: 3; /* Les indicateurs sont au-dessus des images */
+}
+
+.carousel .indicators .indicator-item {
+  margin: 13px 4px !important;
+}
+
+/*--------------- STYLE DIV BIENVENUE ---------------*/
+.text_bienvenue h1{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 4rem;
+  position: relative;
+  z-index: 1;
+  text-shadow: #383737 0px 1px 1px;
+  font-size: 5rem ;
+
+}
+
+.text_bienvenue {
+  text-align: center;
+  margin-top: 0 !important;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/*--------------- NOM AU-DESSUS DE L'IMAGE ---------------*/
+.carousel-caption {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+.nom_pilier {
+  width: 600px;
+  margin-top: 0;
+  margin-bottom: 3vh;
+  font-size: 2rem !important;
+  text-shadow: #383737 0px 1px 1px;
+  filter: brightness(80%) !important; /* Réduire la luminosité à 80% */
+  transition: filter 0.3s ease-in-out; /* Transition sur le filtre */
+}
+
+
+/* Ajout de styles pour les boutons de navigation */
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 3;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}

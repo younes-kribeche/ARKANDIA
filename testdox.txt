@@ -1,0 +1,5 @@
+Model (Tests\Model)
+ [x] Get user by id
+ [x] Get artefact by id
+ [x] Get existing artefact
+

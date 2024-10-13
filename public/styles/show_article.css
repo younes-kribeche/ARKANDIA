@@ -1,0 +1,91 @@
+/*--------------- STYLE DIV CHARACTER SHEET ---------------*/
+
+.infobox {
+  display: flex;
+  width: 50svw;
+  margin: 5%;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 0.9em;
+  height: fit-content;
+  margin-left: 22svw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+}
+
+.infobox img {
+  max-width: 20svw;
+  height: auto;
+  margin-right: 5svh;
+  border:solid 5px #3f3f3f ;
+  border-radius: 3px;
+}
+
+.infos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*--------------- STYLE DIV BIOGRAPHY ---------------*/
+.container2 {
+  display: flex;
+  width: 76% !important;
+  margin: 5%;
+  margin-top: 0 !important;
+  margin-right: 2%;
+  padding: 3%;
+  box-sizing: border-box;
+  margin-left: 22svw;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  margin-top: 2vh !important;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+ul, ol {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.sidebar_container{
+  margin-top: 5vh;
+}
+
+.footer {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #a2a9b1;
+  color: #555;
+  font-size: 0.8em;
+}
+/*--------------- STYLE DIV SUMMARY ---------------*/
+
+.sidebar {
+  position: fixed;
+  width: 20%;
+  box-sizing: border-box;
+  border-right: 1px solid #a2a9b1;
+  height: 150vh;
+}
+
+.sidebar .toc {
+  margin-bottom: 20px;
+  text-align: center;
+}

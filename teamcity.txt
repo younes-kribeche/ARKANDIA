@@ -1,0 +1,26 @@
+
+##teamcity[testCount count='3' flowId='40400']
+
+##teamcity[testSuiteStarted name='C:\wamp64\www\Arkandia\phpunit.xml' flowId='40400']
+
+##teamcity[testSuiteStarted name='Project Test Suite' flowId='40400']
+
+##teamcity[testSuiteStarted name='Tests\ModelTest' locationHint='php_qn://C:\wamp64\www\Arkandia\tests\ModelTest.php::\Tests\ModelTest' flowId='40400']
+
+##teamcity[testStarted name='testGetUserById' locationHint='php_qn://C:\wamp64\www\Arkandia\tests\ModelTest.php::\Tests\ModelTest::testGetUserById' flowId='40400']
+
+##teamcity[testFinished name='testGetUserById' duration='19' flowId='40400']
+
+##teamcity[testStarted name='testGetArtefactById' locationHint='php_qn://C:\wamp64\www\Arkandia\tests\ModelTest.php::\Tests\ModelTest::testGetArtefactById' flowId='40400']
+
+##teamcity[testFinished name='testGetArtefactById' duration='2' flowId='40400']
+
+##teamcity[testStarted name='testGetExistingArtefact' locationHint='php_qn://C:\wamp64\www\Arkandia\tests\ModelTest.php::\Tests\ModelTest::testGetExistingArtefact' flowId='40400']
+
+##teamcity[testFinished name='testGetExistingArtefact' duration='1' flowId='40400']
+
+##teamcity[testSuiteFinished name='Tests\ModelTest' flowId='40400']
+
+##teamcity[testSuiteFinished name='Project Test Suite' flowId='40400']
+
+##teamcity[testSuiteFinished name='C:\wamp64\www\Arkandia\phpunit.xml' flowId='40400']

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PHPUnit tests">
+  <testsuite name="C:\wamp64\www\Arkandia\phpunit.xml" tests="3" assertions="18" errors="0" failures="0" skipped="0" time="0.030114">
+    <testsuite name="Project Test Suite" tests="3" assertions="18" errors="0" failures="0" skipped="0" time="0.030114">
+      <testsuite name="Tests\ModelTest" file="C:\wamp64\www\Arkandia\tests\ModelTest.php" tests="3" assertions="18" errors="0" failures="0" skipped="0" time="0.030114">
+        <testcase name="testGetUserById" file="C:\wamp64\www\Arkandia\tests\ModelTest.php" line="67" class="Tests\ModelTest" classname="Tests.ModelTest" assertions="3" time="0.022865"/>
+        <testcase name="testGetArtefactById" file="C:\wamp64\www\Arkandia\tests\ModelTest.php" line="75" class="Tests\ModelTest" classname="Tests.ModelTest" assertions="7" time="0.004359"/>
+        <testcase name="testGetExistingArtefact" file="C:\wamp64\www\Arkandia\tests\ModelTest.php" line="92" class="Tests\ModelTest" classname="Tests.ModelTest" assertions="8" time="0.002891"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
